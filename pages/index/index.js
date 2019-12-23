@@ -4,51 +4,139 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    thefenleilist:[],
+    thewriterlist:[],
+    thebookslist:[],
+    thehostlist:[],
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  // getimage:function() {
+  //   var that = this
+  //   wx.request({
+  //     url: 'https://wujunhui.xyz/personimages',
+  //     // header: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     method: "get",
+  //     data: {
+  //       "yourtelphone": '13123733417'
+  //     },
+  //     success: function (res) {
+  //       that.setData({
+  //         theurl: res.data[0].touxiang
+  //       })
+  //       console.log(res.data[0].touxiang);
+  //     }
+  //   })
+  // },
+  onLoad: function (options) {
+    var that = this;
+    app.GetfenleiData().then((res) => {
+      that.setData({
+        thefenleilist: app.globalData.fenlei
+      });
+    });
+    app.GetwriterData().then((res) => {
+      that.setData({
+        thewriterlist: app.globalData.writer
+      });
+    });
+    app.GetbooksData().then((res) => {
+      that.setData({
+        thebookslist: app.globalData.books
+      });
+    });
+    app.GethostData().then((res) => {
+      that.setData({
+        thehostlist: app.globalData.host
+      });
+    });
+
+    // app.GetusersData().then((res) => {
+    //   that.setData({
+    //     theuserlist: app.globalData.users
+    //   });
+    // });
+    /**
+     * 获取用户信息
+     */
+    // var that = this;
+    // wx.getUserInfo({
+    //   success: function (res) {
+    //     // console.log(res.userInfo);
+    //     wx.request({
+    //       url: 'https://wujunhui.xyz/landreg',
+    //       // header: { "Content-Type": "application/x-www-form-urlencoded" },
+    //       method: "get",
+    //       data: {
+    //         'name': res.userInfo.nickName,
+    //         'theurl': res.userInfo.avatarUrl,
+    //         'city': res.userInfo.city,
+    //         'country': res.userInfo.country,
+    //         'gender': res.userInfo.gender,
+    //         //yourtelphone,将作为您自己的唯一身份，每个人都不一样
+    //         //微信小程序可以获取到微信小程序微信用户的唯一opendid，但是比较麻烦，我们就用电话号码作为唯一索引，该号码不再进行验证格式，希望大家填写正确的电话号码，以便区分身份
+    //         "yourtelphone": '13123733417'
+    //       },
+    //       success: function (res) {
+    //         console.log(res.data);
+    //       }
+    //     })
+    //   }
+    // })
+    // wx.request({
+    //   url: 'https://wujunhui.xyz/getfenleilist',
+    //   // header: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   method: "get",
+    //   data: {
+    //   },
+    //   success: function (res) {
+    //     var thefenleilist = 'thefenleilist'
+    //     that.setData({
+    //       [thefenleilist]:res.data
+    //     })
+    //     // console.log(res.data);
+    //   }
+    // })
+    // wx.request({
+    //   url: 'https://wujunhui.xyz/getwriters',
+    //   // header: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   method: "get",
+    //   data: {
+    //   },
+    //   success: function (res) {
+    //     var thewriterlist = 'thewriterlist'
+    //     that.setData({
+    //       [thewriterlist]: res.data
+    //     })
+    //   }
+    // })
+    // wx.request({
+    //   url: 'https://wujunhui.xyz/getbooks',
+    //   // header: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   method: "get",
+    //   data: {
+    //   },
+    //   success: function (res) {
+    //     var thebookslist = 'thebookslist'
+    //     that.setData({
+    //       [thebookslist]: res.data
+    //     })
+    //   }
+    // })
+    // wx.request({
+    //   url: 'https://wujunhui.xyz/gethostser',
+    //   // header: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   method: "get",
+    //   data: {
+    //   },
+    //   success: function (res) {
+    //     var thehostlist = 'thehostlist'
+    //     that.setData({
+    //       [thehostlist]: res.data
+    //     })
+    //   }
+    // })
+    
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  onShow:function () {
+
   }
 })

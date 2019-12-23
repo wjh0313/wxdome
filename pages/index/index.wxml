@@ -1,13 +1,74 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="topview">
+  <image class="topview-image" src="../../images/shenbei.png"></image>
+  <image class="topview-image" src="../../images/list.png"></image>
+</view>
+<view class="topserview">
+  <view class="topserview-content">
+    <image class="topserview-image" src="../../images/sericon.png"></image>
+    <text>搜索...</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">排行分类</text>
+  <text class="view-fenlei-text2">查看全部 ></text>
+</view>
+<view class="theswipt1">
+  <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
+    <view class="theswipts-view" wx:for="{{ thefenleilist }}" wx:key="index">
+      <image class="swipts-view-images" src='{{ item.touxiang }}'></image>
+      <view>{{ item.type }}</view>
+    </view>
+  </scroll-view>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">作者排行</text>
+  <text class="view-fenlei-text2">查看全部 ></text>
+</view>
+<view class="theswipt1">
+  <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
+    <view class="theswipts-view" wx:for="{{ thewriterlist }}" wx:key="index">
+      <image class="swipts-view-images" src='{{ item.touxiang }}'></image>
+      <view>{{ item.name }}</view>
+    </view>
+  </scroll-view>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">新发布</text>
+  <text class="view-fenlei-text2">查看全部 ></text>
+</view>
+<view class="aboutbooks">
+  <view class="aboutbooks-content">
+    <view class="realy-con" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{index<6}}">
+      <image class="realy-con-image" src="{{ item.touxiang }}"></image>
+      <view class="realy-text1">{{ item.bookname }}</view>
+      <view class="realy-text2">{{ item.writername }}</view>
+    </view>
   </view>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">热门搜索</text>
+</view>
+<view class="hostser">
+  <text class="theloopser {{ 'theindex'+index }}" wx:for="{{ thehostlist }}" wx:key="index">{{ item.title }}</text>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">热销榜</text>
+  <text class="view-fenlei-text2">查看全部 ></text>
+</view>
+<view class="theswipt2">
+  <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
+  <view class="thebookscontent" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{index<5}}">
+      <view class="thebooksloop">
+      <image class="thebooksimage" src='{{ item.touxiang }}'></image>
+      <view class="thebooks-content">
+        <text class="thebooks-content-text1">{{ item.bookname }}</text>
+        <text class="thebooks-content-text2">作者：{{ item.writername }}</text>
+        <text class="thebooks-content-text3">{{ item.about }}</text>
+      </view>
+      <image class="thebooksimage1" src="../../images/more.png"></image>
+    </view>
+  </view>
+
+  </scroll-view>
 </view>

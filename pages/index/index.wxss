@@ -1,21 +1,232 @@
 /**index.wxss**/
-.userinfo {
+
+.topview {
+  height: 100rpx;
+  width: 660rpx;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.topview-image {
+  width: 34rpx;
+  height: 34rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.topserview {
+  height: 130rpx;
+  width: 660rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
-.usermotto {
-  margin-top: 200px;
+.topserview-content {
+  width: 100%;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background-color: #2d353d;
+  display: flex;
+  align-items: center;
+  color: #9da3b4;
+}
+
+.topserview-image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+
+.view-fenlei {
+  height: 120rpx;
+  width: 660rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.view-fenlei-text1 {
+  color: #fff;
+  font-size: 40rpx;
+}
+
+.view-fenlei-text2 {
+  color: #9da3b4;
+  font-size: 26rpx;
+}
+
+.theswipt1 {
+  height: 280rpx;
+  margin-left: 45rpx;
+  border-bottom: 1px solid #2f343c;
+  margin-bottom: 20rpx;
+}
+
+.theswipt2 {
+  height: 370rpx;
+  margin-left: 45rpx;
+  padding-top: 30rpx;
+}
+
+.theswipts-view {
+  height: 195rpx;
+  width: 200rpx;
+  display: inline-block;
+  color: #fff;
+}
+
+.thescroll {
+  white-space: nowrap;
+}
+
+.swipts-view-images {
+  width: 165rpx;
+  height: 165rpx;
+}
+
+.aboutbooks {
+  height: 980rpx;
+  margin-left: 45rpx;
+  border-bottom: 1px solid #2f343c;
+  margin-bottom: 20rpx;
+}
+
+.aboutbooks-content {
+  width: 660rpx;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.realy-con {
+  height: 490rpx;
+  width: 190rpx;
+}
+
+.realy-con-image {
+  width: 190rpx;
+  height: 300rpx;
+}
+
+.realy-text1 {
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.realy-text2 {
+  color: #5d637c;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+
+.hostser {
+  height: 190rpx;
+  margin-left: 45rpx;
+  border-bottom: 1px solid #2f343c;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.theloopser {
+  font-size: 24rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-right: 30rpx;
+  border-radius: 40rpx;
+  padding: 0rpx 40rpx;
+}
+
+.theindex0 {
+  border: 1px solid #f54d82;
+  color: #f54d82;
+}
+
+.theindex1 {
+  border: 1px solid #56a87b;
+  color: #56a87b;
+}
+
+.theindex3 {
+  border: 1px solid #9060e8;
+  color: #9060e8;
+}
+
+.theindex2 {
+  border: 1px solid #d35158;
+  color: #d35158;
+}
+
+.theindex4 {
+  border: 1px solid #ded658;
+  color: #ded658;
+}
+
+.thebooksloop {
+  width: 600rpx;
+  height: 250rpx;
+  background-color: #2b323b;
+  border-radius: 20rpx;
+  position: relative;
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.thebookscontent {
+  height: 300rpx;
+  width: 600rpx;
+  margin-right: 30rpx;
+  display: inline-block;
+}
+
+.thebooksimage {
+  position: absolute;
+  height: 250rpx;
+  width: 170rpx;
+  top: -30rpx;
+  left: 30rpx;
+}
+
+.thebooks-content {
+  margin-left: 230rpx;
+  width: 330rpx;
+  height: 190rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.thebooks-content-text1 {
+  font-size: 40rpx;
+  color: #fff;
+}
+
+.thebooks-content-text2 {
+  font-size: 24rpx;
+  color: #5d637c;
+  padding: 10rpx 0;
+  border-bottom: 1px solid #353c46;
+}
+
+.thebooks-content-text3 {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #868dab;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+.thebooksimage1
+{
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  width: 30rpx;
+  height: 6rpx;
 }

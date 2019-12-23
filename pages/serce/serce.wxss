@@ -1,0 +1,23 @@
+/* pages/serce/serce.wxss */
+.top-view
+{
+  height: 120rpx;
+  text-align: center;
+  position: relative;
+}
+.top-view-text
+{
+  font-size: 42rpx;
+  color: #fff;
+}
+.top-view-right
+{
+  right: 45rpx;
+  top: 15rpx;
+  position: absolute;
+}
+.top-view-right-image
+{
+  width: 32rpx;
+  height: 32rpx;
+}

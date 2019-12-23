@@ -1,0 +1,8 @@
+<!--pages/serce/serce.wxml-->
+<view class="top-view">
+  <text class="top-view-text">探索</text>
+  <view class="top-view-right">
+    <image class="top-view-right-image" src="../../images/tsicon1.png"></image>
+    <image class="top-view-right-image" src="../../images/tsicon2a.png"></image>
+  </view>
+</view>

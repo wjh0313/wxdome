@@ -1,14 +1,42 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/serce/serce",
+    "pages/books/books",
+    "pages/myself/myself"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#21272e",
+    "navigationBarTitleText": "书社",
+    "navigationBarTextStyle": "white"
   },
+    "tabBar": {
+      "borderStyle": "black",
+      "backgroundColor": "#21272e",
+      "list": [
+        {
+          "selectedIconPath": "images/sHome.png",
+          "iconPath": "images/Home.png",
+          "pagePath": "pages/index/index"
+        },
+        {
+          "selectedIconPath": "images/Shape.png",
+          "iconPath": "images/Shap.png",
+          "pagePath": "pages/serce/serce"
+        },
+        {
+          "selectedIconPath": "images/books.png",
+          "iconPath": "images/book.png",
+          "pagePath": "pages/books/books"
+        },
+        {
+          "selectedIconPath": "images/myselfs.png",
+          "iconPath": "images/myself.png",
+          "pagePath": "pages/myself/myself"
+        }
+      ]
+    },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
