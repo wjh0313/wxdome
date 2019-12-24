@@ -1,18 +1,21 @@
 // pages/books/books.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
+    thebookslist:[],
+      },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      thebookslist: app.globalData.books,
+    })
   },
 
   /**

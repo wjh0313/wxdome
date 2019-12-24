@@ -1,1 +1,140 @@
 /* pages/myself/myself.wxss */
+.top-view
+{
+  height: 120rpx;
+  text-align: center;
+  position: relative;
+}
+.top-view-text
+{
+  font-size: 42rpx;
+  color: #fff;
+}
+.thelistimg
+{
+  width: 36rpx;
+  height: 36rpx;
+  right: 45rpx;
+  top: 15rpx;
+  position: absolute;
+}
+.myselfview
+{
+  width: 660rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.userimage
+{
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 120rpx;
+}
+.theuserright
+{
+  display: flex;
+  flex-direction: column;
+  width: 390rpx;
+}
+.thefxinview
+{
+  width: 180rpx;
+  height: 64rpx;
+  border: 1px solid #545d66;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 64rpx;
+  margin-top: 25rpx;
+  margin-left: 205rpx;
+}
+.theuserright-t1
+{
+  font-size: 40rpx;
+  margin-top: 10rpx;
+  color: #fff;
+}
+.theuserright-t2
+{
+  font-size: 28rpx;
+  color: #b5b7c5;
+  margin-top: 15rpx;
+  padding-bottom: 33rpx;
+  border-bottom: 1px solid #252930;
+}
+.theuserright-t3
+{
+  color: #9497ab;
+  margin-left: 15rpx;
+}
+.linktoimg
+{
+  width: 22rpx;
+  height: 22rpx;
+}
+.theuserimages
+{
+  margin: 0 auto;
+  margin-top: 50rpx;
+  width: 660rpx;
+  height: 130rpx;
+  background-color: #2b323b;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.theline
+{
+  height: 80rpx;
+  width: 1px;
+  background-color: #363c45;
+}
+.theuserflextext
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80rpx;
+}
+.thesamecolor
+{
+  font-size: 24rpx;
+  color: #75808d;
+}
+.thelistfont
+{
+  text-align: center;
+  color: #fff;
+}
+.theuserlist-last
+{
+  height: 610rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 45rpx;
+  margin-top: 50rpx;
+  justify-content: space-evenly;
+}
+.thelastline
+{
+  width: 100%;
+  height: 1px;
+  background-color: #333c47;
+}
+.thecontent-list
+{
+  display: flex;
+  justify-content: space-between;
+}
+.thelist-text
+{
+  color: #dcdeea;
+}
+.thelist-text-right
+{
+  font-size: 40rpx;
+  color: #dcdeea;
+  margin-right: 50rpx;
+}

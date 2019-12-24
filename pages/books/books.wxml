@@ -1,2 +1,32 @@
 <!--pages/books/books.wxml-->
-<text>pages/books/books.wxml</text>
+
+<view class="top-view">
+  <text class="top-view-text">书架</text>
+  <image class="thelistimg" src="../../images/list.png"></image>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">正在阅读</text>
+  <text class="view-fenlei-text2">查看全部 ></text>
+</view>
+<view class="aboutbooks">
+  <view class="aboutbooks-content">
+    <navigator url="../indexbook/indexbook?thebook={{ item.id }}" class="realy-con" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{index<3}}">
+      <image class="realy-con-image" src="{{ item.touxiang }}"></image>
+      <view class="realy-text1">{{ item.bookname }}</view>
+      <view class="realy-text2">{{ item.writername }}</view>
+    </navigator>
+  </view>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">未读</text>
+  <text class="view-fenlei-text2">查看全部 ></text>
+</view>
+<view class="aboutbooks">
+  <view class="aboutbooks-content">
+    <navigator url="../indexbook/indexbook?thebook={{ item.id }}" class="realy-con" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{index>3}}">
+      <image class="realy-con-image" src="{{ item.touxiang }}"></image>
+      <view class="realy-text1">{{ item.bookname }}</view>
+      <view class="realy-text2">{{ item.writername }}</view>
+    </navigator>
+  </view>
+</view>

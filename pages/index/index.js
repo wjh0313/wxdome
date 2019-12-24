@@ -48,12 +48,12 @@ Page({
         thehostlist: app.globalData.host
       });
     });
-
-    // app.GetusersData().then((res) => {
-    //   that.setData({
-    //     theuserlist: app.globalData.users
-    //   });
-    // });
+    app.GetusersData().then((res) => {
+      // console.log(app.globalData.users)
+      that.setData({
+        theuserlist: app.globalData.users
+      });
+    });
     /**
      * 获取用户信息
      */

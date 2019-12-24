@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/serce/serce",
     "pages/books/books",
-    "pages/myself/myself"
+    "pages/myself/myself",
+    "pages/indexfl/indexfl",
+    "pages/indexser/indexser",
+    "pages/indexbook/indexbook"
   ],
   "window": {
     "backgroundTextStyle": "light",

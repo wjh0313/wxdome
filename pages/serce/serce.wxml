@@ -2,7 +2,34 @@
 <view class="top-view">
   <text class="top-view-text">探索</text>
   <view class="top-view-right">
-    <image class="top-view-right-image" src="../../images/tsicon1.png"></image>
-    <image class="top-view-right-image" src="../../images/tsicon2a.png"></image>
+    <image wx-if="{{!changepage}}" bindtap="changebacks" class="top-view-right-image" src="../../images/tsicon1.png"></image>
+    <image wx-if="{{!changepage}}" class="top-view-right-image" src="../../images/tsicon2a.png"></image>
+    <image wx-if="{{changepage}}" class="top-view-right-image" src="../../images/tsicon1a.png"></image>
+    <image wx-if="{{changepage}}" bindtap="changeback" class="top-view-right-image" src="../../images/tsicon2.png"></image>
+  </view>
+</view>
+<view class="center-books" wx:if="{{ changepage }}">
+  <view bindtap="getintopage" data-index="{{ index }}" class="loopview" wx:for="{{ getbooklist }}" wx:key="index">
+    <image class="loopview-image" src="{{ item.touxiang }}"></image>
+    <text>{{ item.bookname }}</text>
+  </view>
+</view>
+<view wx-if="{{ !changepage }}" class="thealonepage" wx:for="{{ getbooklist }}" wx:if="{{ index==theindex }}" wx:key="index">
+  <image class="thealonepage-image" src="{{ item.touxiang }}"></image>
+  <text class="thealonepage-text1">{{ item.bookname }}</text>
+  <text class="thealonepage-text2">{{ item.writername }}</text>
+  <view class="theuserimages">
+    <image class="theuserimages-images" src="{{ getuserlist[0].touxiang }}"></image>
+    <image class="theuserimages-images" src="{{ getuserlist[0].touxiang }}"></image>
+    <image class="theuserimages-images" src="{{ getuserlist[0].touxiang }}"></image>
+    <image class="theuserimages-images" src="{{ getuserlist[0].touxiang }}"></image>
+  </view>
+  <text class="thelasttext">{{ item.reading }}人已阅读</text>
+</view>
+<view class="thetuijian" wx:if="{{ !changepage }}">
+  <image class="theuserimages-images" src="{{ getuserlist[0].touxiang }}"></image>
+  <view class="thetexts">
+    <text class="thetuijian-t1">{{ getuserlist[0].name }}</text>
+    <text class="thetuijian-t2">推荐</text>
   </view>
 </view>

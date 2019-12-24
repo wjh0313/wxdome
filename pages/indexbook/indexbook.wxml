@@ -1,0 +1,95 @@
+<!--pages/indexbook/indexbook.wxml-->
+
+<view class="theindexbooktop" wx:for="{{ getbooklist }}" wx:key="index" wx:if="{{ item.id==thebookid }}">
+  <image class="theindexbooktop-images" src="{{ item.touxiang }}"></image>
+  <view class="therightview">
+    <text class="rviewtext1">{{ item.bookname }}</text>
+    <text class="rviewtext2">作者：{{ item.writername }}</text>
+    <text class="rviewtext3">{{ item.about }}</text>
+    <view>
+      <image class="theredimage" src="../../images/redstar.png" wx:for="{{ item.star-0 }}" wx:key="index"></image>
+      <text class="thestartext">{{ item.star }}.0</text>
+    </view>
+  </view>
+</view>
+<view class="thebookcenter">
+  <view>
+    <image class="thebookcenter-image" src="../../images/redheart.png"></image>
+    <text class="thebookcenter-text">收藏</text>
+  </view>
+  <view bindtap="changefx">
+    <image class="thebookcenter-image" src="../../images/linkto.png"></image>
+    <text class="thebookcenter-text">分享</text>
+  </view>
+  <view bindtap="uptheview" class="thelastview">
+    <image class="thebookcenter-image" src="../../images/bookin.png"></image>
+    <text class="thebookcenter-text">放入书架</text>
+  </view>
+</view>
+<view class="thebookabout">
+  <view class="thebookabout-content">
+    <text class="thebookabout-content-text1">详情</text>
+    <text class="thebookabout-content-text2" wx:for="{{ getbooklist }}" wx:key="index" wx:if="{{item.id == thebookid}}">{{ item.about }}</text>
+  </view>
+</view>
+<view class="thebookfindml">
+  <text class="thebookfindml-text1">查看目录</text>
+  <text class="thebookfindml-text2">></text>
+</view>
+<view class="thebooktalk">
+  <view class="thebooktalk-view1">
+    <view>
+      <text class="thetalk-text1">评论</text>
+      <text class="thetalk-text2">251条评论</text>
+    </view>
+    <image class="theplimage" src="../../images/pl.png"></image>
+  </view>
+  <view class="thebooktalk-view2">
+    <image class="theimagetx" src="{{ getmyself[0].touxiang }}"></image>
+    <text class="thetalk-text3">{{ getmyself[0].name }}</text>
+  </view>
+  <view class="thebooktalk-view3">
+    <text class="thetalk-text4">这是一条评论</text>
+  </view>
+  <view class="thebooktalk-view4">
+    <text class="thetalk-text5">12-04 21:20</text>
+    <view>
+      <image class="thelastimage" src="../../images/blackheart.png"></image>
+      <text class="thett1">134</text>
+      <image class="thelastimage" src="../../images/thetk.png"></image>
+      <text class="thett2">89</text>
+    </view>
+  </view>
+</view>
+<view class="thefixbar">
+  <view class="thefixbar-content">
+    <view class="theleftbtn">试看</view>
+    <view class="therightbtn">购买</view>
+  </view>
+</view>
+
+<view wx:if="{{ isShow }}" class="upshowview">
+  <view class="upshowview-content">
+    <image class="thebooksimages" src="{{ item.touxiang }}" wx:for="{{ getbooklist }}" wx:key="index" wx:if="{{ item.id == thebookid }}"></image>
+    <text class="theshowtext">已经将这本书加入到个人书架</text>
+    <view bindtap="uptheviewback" class="thebackbtn">好的</view>
+  </view>
+</view>
+<view wx:if="{{ showfx }}" class="thefxshow">
+  <image class="thecloseimg" bindtap="changefxback" src="../../images/close.png"></image>
+  <view class="thefxlist">
+    <view class="thefxlist-bac">
+      <image src="../../images/friend.png" class="thelistimage"></image>
+    </view>
+    <view class="thefxlist-bac">
+      <image src="../../images/qqhome.png" class="thelistimage"></image>
+    </view>
+    <view class="thefxlist-bac">
+      <image src="../../images/wb.png" class="thelistimage"></image>
+    </view>
+    <view class="thefxlist-bac">
+      <image src="../../images/qq.png" class="thelistimage"></image>
+    </view>
+
+  </view>
+</view>

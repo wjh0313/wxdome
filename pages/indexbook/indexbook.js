@@ -1,4 +1,4 @@
-// pages/serce/serce.js
+// pages/indexbook/indexbook.js
 const app = getApp()
 Page({
 
@@ -6,35 +6,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-    changepage: true,
-    getbooklist:[],
-    getuserlist:[],
-    theindex:0,
+    thebookid:0,
+    getbooklist: [],
+    getmyself:[],
+    isShow:false,
+    showfx:false,
   },
-  changeback:function() {
-    this.setData({
-      changepage:false
-    })
-  },
-  changebacks:function() {
-    this.setData({
-      changepage:true
-    })
-  },
-  getintopage:function(event) {
-    this.setData({
-      theindex: event.currentTarget.dataset.index,
-      changepage:false
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // console.log(app.globalData.books);
+    console.log();
     this.setData({
+      thebookid : options.thebook,
+      getmyself: app.globalData.users,
       getbooklist: app.globalData.books,
-      getuserlist: app.globalData.users
+    })
+  },
+  uptheview:function() {
+    this.setData({
+      isShow : true
+    })
+  },
+  uptheviewback:function() {
+    this.setData({
+      isShow: false
+    })
+  },
+  changefx:function() {
+    this.setData({
+      showfx: true
+    })
+  },
+  changefxback:function() {
+    this.setData({
+      showfx: false
     })
   },
 

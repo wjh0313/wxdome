@@ -1,0 +1,339 @@
+/* pages/indexbook/indexbook.wxss */
+
+.theindexbooktop {
+  display: flex;
+  margin-top: 60rpx;
+  margin-left: 45rpx;
+  justify-content: space-between;
+  padding-bottom: 65rpx;
+  border-bottom: 1px solid #323643;
+}
+
+.theindexbooktop-images {
+  width: 220rpx;
+  height: 320rpx;
+}
+
+.therightview {
+  width: 456rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.rviewtext1 {
+  color: #fff;
+  font-size: 40rpx;
+  margin: 20rpx 0;
+}
+
+.rviewtext2 {
+  color: #828d9a;
+  font-size: 28rpx;
+  margin: 15rpx 0;
+}
+
+.rviewtext3 {
+  width: 400rpx;
+  margin-bottom: 30rpx;
+  font-size: 24rpx;
+  color: #868dab;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.theredimage {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 5rpx;
+}
+
+.thestartext {
+  color: #ffce44;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+}
+
+.thebookcenter {
+  height: 125rpx;
+  margin-left: 45rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #323643;
+}
+
+.thebookcenter-image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.thebookcenter-text {
+  font-size: 28rpx;
+  color: #fff;
+  margin-left: 20rpx;
+  position: relative;
+  bottom: 10rpx;
+}
+
+.thelastview {
+  margin-right: 90rpx;
+}
+
+.thebookabout {
+  margin-left: 45rpx;
+  margin-top: 60rpx;
+  border-bottom: 1px solid #323643;
+  display: flex;
+}
+
+.thebookabout-content {
+  padding-bottom: 80rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.thebookabout-content-text1 {
+  color: #fff;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.thebookabout-content-text2 {
+  width: 660rpx;
+  font-size: 28rpx;
+  color: #868dab;
+}
+
+.thebookfindml {
+  height: 140rpx;
+  margin-left: 45rpx;
+  border-bottom: 1px solid #323643;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thebookfindml-text1 {
+  color: #fff;
+}
+
+.thebookfindml-text2 {
+  color: #868dab;
+  font-size: 40rpx;
+  margin-right: 50rpx;
+}
+
+.thebooktalk {
+  width: 660rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200rpx;
+}
+
+.thebooktalk-view1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thebooktalk-view2 {
+  margin-top: 55rpx;
+}
+
+.thebooktalk-view3 {
+  margin-left: 90rpx;
+}
+
+.thebooktalk-view4 {
+  margin-left: 90rpx;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.theplimage {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.theimagetx {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+}
+
+.thelastimage {
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 30rpx;
+}
+
+.thetalk-text1 {
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.thetalk-text2 {
+  color: #0d59ab;
+  font-size: 28rpx;
+  margin-left: 24rpx;
+  word-spacing: 1px;
+}
+
+.thetalk-text3 {
+  color: #fff;
+  position: relative;
+  bottom: 20rpx;
+  left: 20rpx;
+}
+
+.thetalk-text4 {
+  color: #575d71;
+  font-size: 28rpx;
+}
+
+.thetalk-text5 {
+  color: #656a7b;
+  font-size: 24rpx;
+}
+
+.thett1 {
+  color: #656a7b;
+  font-size: 24rxp;
+  margin-left: 15rpx;
+}
+
+.thett2 {
+  color: #656a7b;
+  font-size: 24rxp;
+  margin-left: 15rpx;
+}
+
+.thefixbar {
+  position: fixed;
+  bottom: 0;
+  height: 160rpx;
+  width: 100%;
+  background-color: #373a49;
+}
+
+.thefixbar-content {
+  width: 660rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  font-size: 26rpx;
+  justify-content: space-between;
+}
+
+.theleftbtn {
+  background-color: #9295a9;
+  height: 95rpx;
+  width: 220rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 95rpx;
+}
+
+.therightbtn {
+  background-color: #fb6894;
+  height: 95rpx;
+  width: 410rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 95rpx;
+}
+
+.upshowview
+{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+}
+.upshowview-content
+{
+  width: 555rpx;
+  height: 765rpx;
+  position: fixed;
+  top: 15%;
+  left: 12%;
+  background-color: #373a48;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20rpx;
+}
+.thebackbtn
+{
+  width: 255rpx;
+  height: 95rpx;
+  background-color: #fb6894;
+  border-radius: 20rpx;
+  color: #fff;
+  line-height: 95rpx;
+}
+.thebooksimages
+{
+  width: 217rpx;
+  height: 320rpx;
+}
+.theshowtext
+{
+  width: 359rpx;
+  font-size: 36rpx;
+  color: #fff;
+  margin: 40rpx 0; 
+}
+.thefxshow
+{
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  height: 340rpx;
+  width: 100%;
+  background-color: #2d353f;
+}
+.thecloseimg
+{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin-right: 35rpx;
+  margin-top: 35rpx;
+}
+.thefxlist
+{
+  width: 570rpx;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 150rpx;
+  justify-content: space-between;
+}
+.thefxlist-bac
+{
+  background-color: #fff;
+  width: 82rpx;
+  height: 82rpx;
+  border-radius: 41rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thelistimage
+{
+  width: 52rpx;
+  height: 52rpx;
+}

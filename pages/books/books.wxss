@@ -1,1 +1,72 @@
 /* pages/books/books.wxss */
+.top-view
+{
+  height: 120rpx;
+  text-align: center;
+  position: relative;
+}
+.top-view-text
+{
+  font-size: 42rpx;
+  color: #fff;
+}
+.thelistimg
+{
+  width: 36rpx;
+  height: 30rpx;
+  right: 45rpx;
+  top: 15rpx;
+  position: absolute;
+}
+.view-fenlei {
+  height: 120rpx;
+  width: 660rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.view-fenlei-text1 {
+  color: #fff;
+  font-size: 40rpx;
+}
+
+.view-fenlei-text2 {
+  color: #9da3b4;
+  font-size: 26rpx;
+}
+
+
+.aboutbooks {
+  margin-left: 45rpx;
+  margin-bottom: 20rpx;
+}
+
+.aboutbooks-content {
+  width: 660rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.realy-con {
+  height: 490rpx;
+  width: 190rpx;
+}
+
+.realy-con-image {
+  width: 190rpx;
+  height: 300rpx;
+}
+
+.realy-text1 {
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.realy-text2 {
+  color: #5d637c;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}

@@ -1,0 +1,111 @@
+/* pages/indexser/indexser.wxss */
+.theindexserview
+{
+  width: 660rpx;
+  margin: 0 auto;
+}
+.thefirst-view
+{
+  width: 660rpx;
+  height: 100rpx;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.thetopser-images
+{
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 30rpx;
+}
+.thetopser-input
+{
+  padding-left: 20rpx;
+}
+.thefirtext
+{
+  color: #777d8d;
+}
+.theindexserview-topser
+{
+  width: 550rpx;
+  height: 100rpx;
+  background-color: #2d353d;
+  border-radius: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.view-fenlei {
+  height: 120rpx;
+  width: 660rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.view-fenlei-text1 {
+  color: #fff;
+  font-size: 40rpx;
+}
+
+.view-fenlei-text2 {
+  color: #9da3b4;
+  font-size: 26rpx;
+}
+
+
+.aboutbooks {
+  margin-left: 45rpx;
+  border-bottom: 1px solid #2f343c;
+  margin-bottom: 20rpx;
+}
+
+.aboutbooks-content {
+  width: 660rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.realy-con {
+  height: 490rpx;
+  width: 190rpx;
+}
+
+.realy-con-image {
+  width: 190rpx;
+  height: 300rpx;
+}
+
+.realy-text1 {
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.realy-text2 {
+  color: #5d637c;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+.thehistoryimages
+{
+  width: 36rpx;
+  height: 36rpx;
+}
+.theserhistory
+{
+  width: 660rpx;
+  margin:  0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.theserhistory-text
+{
+  color: #fff;
+  font-size: 28rpx;
+  background-color: #45485b;
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+}

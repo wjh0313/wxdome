@@ -1,4 +1,4 @@
-// pages/serce/serce.js
+// pages/indexfl/indexfl.js
 const app = getApp()
 Page({
 
@@ -6,35 +6,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    changepage: true,
-    getbooklist:[],
-    getuserlist:[],
-    theindex:0,
+    thetype:'',
+    thebookslist:[],
   },
-  changeback:function() {
-    this.setData({
-      changepage:false
-    })
-  },
-  changebacks:function() {
-    this.setData({
-      changepage:true
-    })
-  },
-  getintopage:function(event) {
-    this.setData({
-      theindex: event.currentTarget.dataset.index,
-      changepage:false
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // console.log(app.globalData.books);
     this.setData({
-      getbooklist: app.globalData.books,
-      getuserlist: app.globalData.users
+      thetype: options.type,
+      thebookslist: app.globalData.books,
     })
   },
 

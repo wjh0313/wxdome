@@ -4,10 +4,10 @@
   <image class="topview-image" src="../../images/list.png"></image>
 </view>
 <view class="topserview">
-  <view class="topserview-content">
+  <navigator url="../indexser/indexser" class="topserview-content">
     <image class="topserview-image" src="../../images/sericon.png"></image>
     <text>搜索...</text>
-  </view>
+  </navigator>
 </view>
 <view class="view-fenlei">
   <text class="view-fenlei-text1">排行分类</text>
@@ -15,10 +15,10 @@
 </view>
 <view class="theswipt1">
   <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
-    <view class="theswipts-view" wx:for="{{ thefenleilist }}" wx:key="index">
+    <navigator url="../indexfl/indexfl?type={{ item.type }}" class="theswipts-view" wx:for="{{ thefenleilist }}" wx:key="index">
       <image class="swipts-view-images" src='{{ item.touxiang }}'></image>
       <view>{{ item.type }}</view>
-    </view>
+    </navigator>
   </scroll-view>
 </view>
 <view class="view-fenlei">
@@ -39,11 +39,11 @@
 </view>
 <view class="aboutbooks">
   <view class="aboutbooks-content">
-    <view class="realy-con" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{index<6}}">
+    <navigator url="../indexbook/indexbook?thebook={{ item.id }}" class="realy-con" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{index<6}}">
       <image class="realy-con-image" src="{{ item.touxiang }}"></image>
       <view class="realy-text1">{{ item.bookname }}</view>
       <view class="realy-text2">{{ item.writername }}</view>
-    </view>
+    </navigator>
   </view>
 </view>
 <view class="view-fenlei">

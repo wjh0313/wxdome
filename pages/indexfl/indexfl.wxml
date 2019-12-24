@@ -1,0 +1,16 @@
+<!--pages/indexfl/indexfl.wxml-->
+<view class="thefltop">
+  <text>{{ thetype }}</text>
+  <image class="thelistimage" src="../../images/list.png"></image>
+</view>
+<view class="thebookscontent" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{ item.type == thetype }}">
+  <view class="thebooksloop">
+    <image class="thebooksimage" src='{{ item.touxiang }}'></image>
+    <view class="thebooks-content">
+      <text class="thebooks-content-text1">{{ item.bookname }}</text>
+      <text class="thebooks-content-text2">作者：{{ item.writername }}</text>
+      <text class="thebooks-content-text3">{{ item.about }}</text>
+    </view>
+    <image class="thebooksimage1" src="../../images/more.png"></image>
+  </view>
+</view>

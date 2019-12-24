@@ -20,4 +20,103 @@
 {
   width: 32rpx;
   height: 32rpx;
+  margin-left: 20rpx;
+}
+
+.center-books
+{
+  margin-top: 80rpx;
+  width: 570rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.loopview
+{
+  width:270rpx;
+  height: 530rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 28rpx;
+}
+.loopview-image
+{
+  width: 260rpx;
+  height: 400rpx;
+  margin-bottom: 20rpx;
+}
+.thealonepage
+{
+  width: 400rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.thealonepage-image
+{
+  width: 400rpx;
+  height: 585rpx;
+}
+.thealonepage-text1
+{
+  color: #fff;
+  font-size: 42rpx;
+  margin-top: 50rpx;
+}
+.thealonepage-text2
+{
+  margin-top: 30rpx;
+  color: #656a7b;
+  font-size: 34rpx;
+  padding-bottom: 75rpx;
+  border-bottom: 1px solid #656a7b;
+}
+.theuserimages
+{
+  width: 320rpx;
+  margin: 0 auto;
+  margin-top: 45rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+
+}
+.theuserimages-images
+{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+}
+.thelasttext
+{
+  color: #a2a8ba;
+}
+.thetuijian
+{
+  margin-top: 80rpx;
+  margin-bottom: 70rpx;
+  float: right;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  width: 240rpx;
+  height: 84rpx;
+  background-color: #15191d;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.thetuijian-t1
+{
+  display: block;
+  color: #fff;
+  font-size: 24rpx;
+}
+.thetuijian-t2
+{
+  display: block;
+  color: #656a7b;
+  font-size: 22rpx;
 }
