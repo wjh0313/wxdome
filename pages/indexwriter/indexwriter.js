@@ -1,4 +1,4 @@
-// pages/myself/myself.js
+// pages/indexwriter/indexwriter.js
 const app = getApp()
 Page({
 
@@ -6,20 +6,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-    getuserlist: [],
+    theid:0,
+    getwriterlist:[],
+    getbooklist:[],
+    thebooks:0,
   },
-  navtoset:function() {
-    wx.navigateTo({
-      url: '../seting/seting',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
     this.setData({
-      getuserlist: app.globalData.users
+      theid: options.id-1,
+      getwriterlist: app.globalData.writer,
+      getbooklist:app.globalData.books,
+    },function() {
+      let num = 0;
+      for (let a of this.data.getbooklist  )
+      {
+        if (a.writername == this.data.getwriterlist[this.data.theid].name)
+        {
+          num++;
+        }
+      }
+      this.setData({
+        thebooks:num
+      })
     })
+
   },
 
   /**

@@ -1,0 +1,40 @@
+<!--pages/seting/seting.wxml-->
+<view class="thesettop">设置</view>
+<view class="thelist">
+  <view class="contentview">
+    <text class="thefont">查看账户</text>
+    <image class="therightimg" src="../../images/theright.png"></image>
+  </view>
+  <view class="thelins"></view>
+  <view class="contentview">
+    <text class="thefont">个人资料</text>
+    <image class="therightimg" src="../../images/theright.png"></image>
+  </view>
+  <view class="thelins"></view>
+  <view class="contentview">
+    <text class="thefont">消息提醒</text>
+    <switch type="switch" color="#fb6894" checked></switch>
+  </view>
+  <view class="thelins"></view>
+  <view class="contentview">
+    <text class="thefont">清理缓存</text>
+    <view>
+    <text class="thefonts">128M</text>
+      <image class="therightimg" src="../../images/theright.png"></image>
+    </view>
+  </view>
+  <view class="thelins"></view>
+  <view class="contentview">
+    <text class="thefont">帮助中心</text>
+    <image class="therightimg" src="../../images/theright.png"></image>
+  </view>
+  <view class="thelins"></view>
+  <view class="contentview">
+    <text class="thefont">关于我们</text>
+    <image class="therightimg" src="../../images/theright.png"></image>
+  </view>
+  <view class="thelins"></view>
+</view>
+<view class="outload">
+  退出登陆
+</view>

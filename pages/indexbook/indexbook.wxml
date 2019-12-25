@@ -64,7 +64,7 @@
 <view class="thefixbar">
   <view class="thefixbar-content">
     <view class="theleftbtn">试看</view>
-    <view class="therightbtn">购买</view>
+    <navigator url="../buycar/buycar?bookid={{ getbooklist[thebookid-1].id }}" class="therightbtn">购买</navigator>
   </view>
 </view>
 

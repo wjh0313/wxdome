@@ -11,7 +11,7 @@
 </view>
 <view class="view-fenlei">
   <text class="view-fenlei-text1">排行分类</text>
-  <text class="view-fenlei-text2">查看全部 ></text>
+  <navigator url="../allfenlei/allfenlei" class="view-fenlei-text2">查看全部 ></navigator>
 </view>
 <view class="theswipt1">
   <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
@@ -23,14 +23,14 @@
 </view>
 <view class="view-fenlei">
   <text class="view-fenlei-text1">作者排行</text>
-  <text class="view-fenlei-text2">查看全部 ></text>
+  <navigator url="../allwriter/allwriter" class="view-fenlei-text2">查看全部 ></navigator>
 </view>
 <view class="theswipt1">
   <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
-    <view class="theswipts-view" wx:for="{{ thewriterlist }}" wx:key="index">
+    <navigator url="../indexwriter/indexwriter?id={{ item.id }}" class="theswipts-view" wx:for="{{ thewriterlist }}" wx:key="index">
       <image class="swipts-view-images" src='{{ item.touxiang }}'></image>
       <view>{{ item.name }}</view>
-    </view>
+    </navigator>
   </scroll-view>
 </view>
 <view class="view-fenlei">
@@ -58,17 +58,17 @@
 </view>
 <view class="theswipt2">
   <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
-  <view class="thebookscontent" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{index<5}}">
+    <view class="thebookscontent" wx:for="{{ thebookslist }}" wx:key="index" wx:if="{{index<5}}">
       <view class="thebooksloop">
-      <image class="thebooksimage" src='{{ item.touxiang }}'></image>
-      <view class="thebooks-content">
-        <text class="thebooks-content-text1">{{ item.bookname }}</text>
-        <text class="thebooks-content-text2">作者：{{ item.writername }}</text>
-        <text class="thebooks-content-text3">{{ item.about }}</text>
+        <image class="thebooksimage" src='{{ item.touxiang }}'></image>
+        <view class="thebooks-content">
+          <text class="thebooks-content-text1">{{ item.bookname }}</text>
+          <text class="thebooks-content-text2">作者：{{ item.writername }}</text>
+          <text class="thebooks-content-text3">{{ item.about }}</text>
+        </view>
+        <image class="thebooksimage1" src="../../images/more.png"></image>
       </view>
-      <image class="thebooksimage1" src="../../images/more.png"></image>
     </view>
-  </view>
 
   </scroll-view>
 </view>

@@ -1,0 +1,95 @@
+/* pages/buycar/buycar.wxss */
+.thebuycartop
+{
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  color: #fff;
+}
+.thebookscontent {
+  height: 300rpx;
+  width: 660rpx;
+  margin:  0 auto;
+  margin-top: 80rpx;
+}
+.thebooksloop {
+  width: 660rpx;
+  height: 250rpx;
+  background-color: #2b323b;
+  border-radius: 20rpx;
+  position: relative;
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.thebooksimage {
+  position: absolute;
+  height: 250rpx;
+  width: 170rpx;
+  top: -30rpx;
+  left: 30rpx;
+}
+.thebooksimage1
+{
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  width: 30rpx;
+  height: 6rpx;
+}
+.thebooks-content {
+  margin-left: 230rpx;
+  width: 330rpx;
+  height: 190rpx;
+  display: flex;
+  flex-direction: column;
+}
+.thebooks-content-text1 {
+  font-size: 40rpx;
+  color: #fff;
+}
+
+.thebooks-content-text2 {
+  font-size: 24rpx;
+  color: #5d637c;
+  padding: 10rpx 0;
+  border-bottom: 1px solid #353c46;
+}
+
+.thebooks-content-text3 {
+  margin-top: 10rpx;
+  font-size: 50rpx;
+  color: #ff1d8d;
+}
+.thelastfix
+{
+  position: fixed;
+  bottom: 0;
+  height: 220rpx;
+  width: 100%;
+}
+.thelastfixtop
+{
+  margin:  0 auto;
+  width: 660rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40rpx;
+
+}
+.thelastfixbottom
+{
+  height: 140rpx;
+  width: 100%;
+  background-color: #ff1d8d;
+  color: #fff;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 140rpx;
+}
+.lastt1
+{
+  color: #fff;
+}

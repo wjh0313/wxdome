@@ -1,0 +1,10 @@
+<!--pages/yuer/yuer.wxml-->
+<view class="theyuertop">账户余额</view>
+<view class="theyuercontent">
+  <view class="thet1">我的余额(元)</view>
+  <view class="thet2">{{ getuserlist[0].moneys }}.00</view>
+</view>
+<navigator url="../thecz/thecz" class="theczbar">
+  充值
+</navigator>
+

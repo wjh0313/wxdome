@@ -1,0 +1,208 @@
+/* pages/indexwriter/indexwriter.wxss */
+.top-view
+{
+  height: 120rpx;
+  text-align: center;
+}
+.top-view-text
+{
+  font-size: 42rpx;
+  color: #fff;
+}
+.myselfview
+{
+  width: 660rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.userimage
+{
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 120rpx;
+}
+.theuserright
+{
+  display: flex;
+  flex-direction: column;
+  width: 390rpx;
+}
+.thefxinview
+{
+  width: 180rpx;
+  height: 64rpx;
+  border: 1px solid #545d66;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 64rpx;
+  margin-top: 25rpx;
+}
+.thefxinviews
+{
+  width: 180rpx;
+  height: 64rpx;
+  background-color: #478ce0;
+  color: #fff;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 64rpx;
+  margin-top: 25rpx;
+}
+.theuserright-t1
+{
+  font-size: 40rpx;
+  margin-top: 10rpx;
+  color: #fff;
+}
+.theuserright-t2
+{
+  font-size: 28rpx;
+  color: #b5b7c5;
+  margin-top: 15rpx;
+  padding-bottom: 33rpx;
+  border-bottom: 1px solid #252930;
+}
+.theuserright-t3
+{
+  color: #9497ab;
+  margin-left: 15rpx;
+}
+.linktoimg
+{
+  width: 22rpx;
+  height: 22rpx;
+}
+.theuserimages
+{
+  margin: 0 auto;
+  margin-top: 50rpx;
+  width: 660rpx;
+  height: 130rpx;
+  background-color: #2b323b;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.theline
+{
+  height: 80rpx;
+  width: 1px;
+  background-color: #363c45;
+}
+.theuserflextext
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80rpx;
+}
+.thesamecolor
+{
+  font-size: 24rpx;
+  color: #75808d;
+}
+.thelistfont
+{
+  text-align: center;
+  color: #fff;
+}
+.thebutns
+{
+  display: flex;
+  justify-content: space-between;
+}
+.thewritercenter
+{
+  width: 660rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140rpx;
+  margin:  0 auto;
+  margin-top: 30rpx;
+}
+.thewriter-t1
+{
+  font-size: 40rpx;
+  color: #fff;
+}
+.thewriter-t2
+{
+  font-size: 24rpx;
+  color: #478ce0;
+}
+.thewriterbooks
+{
+  margin-left: 45rpx;
+  margin-top: 60rpx;
+}
+.thewriterimg
+{
+  width: 170rpx;
+  height: 250rpx;
+}
+.theloopwriter
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.theloopright
+{
+  width: 500rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.theloopright-t1
+{
+  color: #fff;
+  font-size: 40rpx;
+  margin-top: 10rpx;
+}
+.theloopright-v1
+{
+  display: flex;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+.thev1img
+{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 5rpx;
+}
+.thev1t1
+{
+  font-size: 38rpx;
+  position: relative;
+  bottom: 10rpx;
+  left: 10rpx;
+  color: #ffce44;
+}
+.theloopright-t2
+{
+  font-size: 24rpx;
+  color: #868dab;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+.theloopright-t3
+{
+  color: #478ce0;
+  font-size: 24rpx;
+  margin: 20rpx 0;
+}
+.thelines
+{
+  width: 100%;
+  height: 1px;
+  background-color: #2b323b;
+  margin: 50rpx 0;
+}

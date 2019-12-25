@@ -1,0 +1,40 @@
+<!--pages/thecz/thecz.wxml-->
+<view class="theyuertop">充值</view>
+<view class="theyuercontent">
+  <view class="thet1">充值余额(元)</view>
+  <view class="thet2">
+    <label for="theinout">￥</label>
+    <input id="theinout" bindblur="themoney"></input>
+  </view>
+</view>
+<view wx:if="{{ !myshow }}" bindtap="changeshow" class="theczbar">
+  下一步
+</view>
+
+<view wx:if="{{ myshow }}" class="theupmoney">
+  <view class="theupmoney-content">
+    <image bindtap="changesback" class="thecloseimg" src="../../images/close.png"></image>
+    <view class="thecontents">
+      <view class="thet1">确认付款(元)</view>
+      <view class="thet2s">{{ theinputmoney }}.00</view>
+      <view class="thehcon">
+        <text>订单信息</text>
+        <text>充值</text>
+      </view>
+      <view class="theline"></view>
+      <view class="thehcon">
+        <text>付款方式</text>
+        <view>
+          <text>中国银行卡(8888) </text>
+          <image class="therighticon" src="../../images/theright.png"></image>
+        </view>
+      </view>
+      <view class="theline"></view>
+      <view class="thelasttab">
+        <image class="theimgzw" src="../../images/zw.png"></image>
+        <text class="thelast-t1">指纹验证或 </text>
+        <text class="thelast-t2"> 输入密码</text>
+      </view>
+    </view>
+  </view>
+</view>

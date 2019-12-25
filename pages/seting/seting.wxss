@@ -1,0 +1,58 @@
+/* pages/seting/seting.wxss */
+.thesettop
+{
+  font-size: 40rpx;
+  color: #fff;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.thelist
+{
+  display: flex;
+  margin-left: 45rpx;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 850rpx;
+}
+.thelins
+{
+  width: 100%;
+  height: 1px;
+  background-color: #333c47;
+}
+.contentview
+{
+  display: flex;
+  width: 660rpx;
+  align-items: center;
+  justify-content: space-between;
+  height: 40rpx;
+}
+.thefont
+{
+  color: #dcdeea;
+}
+.therightimg
+{
+  width: 18rpx;
+  height: 27rpx;
+}
+.thefonts
+{
+  color: #dcdeea;
+  font-size: 30rpx;
+  margin-right: 10rpx;
+}
+.outload
+{
+  background-color: #2e363f;
+  color: #dcdeea;
+  width: 100%;
+  font-size: 40rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}

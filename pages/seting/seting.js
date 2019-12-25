@@ -1,25 +1,18 @@
-// pages/myself/myself.js
-const app = getApp()
+// pages/seting/seting.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    getuserlist: [],
+
   },
-  navtoset:function() {
-    wx.navigateTo({
-      url: '../seting/seting',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      getuserlist: app.globalData.users
-    })
+
   },
 
   /**

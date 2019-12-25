@@ -1,7 +1,7 @@
 <!--pages/myself/myself.wxml-->
 <view class="top-view">
   <text class="top-view-text">我的</text>
-  <image class="thelistimg" src="../../images/clun.png"></image>
+  <image class="thelistimg" src="../../images/clun.png" bindtap="navtoset"></image>
 </view>
 <view class="myselfview">
   <image class="userimage" src="{{ getuserlist[0].touxiang }}"></image>
@@ -41,10 +41,10 @@
     <text class="thelist-text-right">></text>
   </view>
   <view class="thelastline"></view>
-  <view class="thecontent-list">
+  <navigator url="../yuer/yuer" class="thecontent-list">
     <text class="thelist-text">账户余额</text>
     <text class="thelist-text-right">{{ getuserlist[0].moneys }}.00  ></text>
-  </view>
+  </navigator>
   <view class="thelastline"></view>
   <view class="thecontent-list">
     <text class="thelist-text">我的评论</text>

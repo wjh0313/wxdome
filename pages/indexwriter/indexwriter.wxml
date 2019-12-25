@@ -1,0 +1,55 @@
+<!--pages/indexwriter/indexwriter.wxml-->
+<view class="top-view">
+  <text class="top-view-text">作者</text>
+</view>
+<view class="myselfview">
+  <image class="userimage" src="{{ getwriterlist[theid].touxiang }}"></image>
+  <view class="theuserright">
+    <text class="theuserright-t1">{{ getwriterlist[theid].name }}</text>
+    <text class="theuserright-t2">{{ getwriterlist[theid].country }}·{{ getwriterlist[theid].city }}</text>
+    <view class="thebutns">
+      <view class="thefxinview">
+        <image class="linktoimg" src="../../images/linkto.png"></image>
+        <text class="theuserright-t3">分享</text>
+      </view>
+      <view class="thefxinviews">
+        <text class="theuserright-t3" style="color:white">+关注</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="theuserimages">
+  <view class="theuserflextext">
+    <text class="thelistfont">{{ getwriterlist[theid].guanz }}</text>
+    <text class="thesamecolor">关注</text>
+  </view>
+  <view class="theline"></view>
+  <view class="theuserflextext">
+    <text class="thelistfont">{{ getwriterlist[theid].fens }}</text>
+    <text class="thesamecolor">粉丝</text>
+  </view>
+  <view class="theline"></view>
+  <view class="theuserflextext">
+    <text class="thelistfont">{{ getwriterlist[theid].likes }}</text>
+    <text class="thesamecolor">喜欢</text>
+  </view>
+</view>
+<view class="thewritercenter">
+  <text class="thewriter-t1">代表作</text>
+  <text class="thewriter-t2">总共{{thebooks}}本书</text>
+</view>
+<view class="thewriterbooks">
+  <view class="theloopwriter" wx:for="{{ getbooklist }}" wx:key="index" wx:if="{{ item.writername == getwriterlist[theid].name }}">
+    <image class="thewriterimg" src="{{ item.touxiang }}"></image>
+    <view class="theloopright">
+      <text class="theloopright-t1">{{ item.bookname }}</text>
+      <view class="theloopright-v1">
+        <image class="thev1img" src="../../images/redstar.png" wx:for="{{ item.star-0 }}" wx:key="index"></image>
+        <text class="thev1t1">{{ item.star }}.0</text>
+      </view>
+      <text class="theloopright-t2">{{ item.about }}</text>
+      <text class="theloopright-t3">{{ item.reading }}人阅读</text>
+    </view>
+    <view class="thelines"></view>
+  </view>
+</view>

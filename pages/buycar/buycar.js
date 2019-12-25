@@ -1,4 +1,4 @@
-// pages/myself/myself.js
+// pages/buycar/buycar.js
 const app = getApp()
 Page({
 
@@ -6,19 +6,33 @@ Page({
    * 页面的初始数据
    */
   data: {
+    thebookid:0,
+    getbookslist: [],
     getuserlist: [],
+    thebookmoneys:0
   },
-  navtoset:function() {
-    wx.navigateTo({
-      url: '../seting/seting',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // console.log(options);
     this.setData({
-      getuserlist: app.globalData.users
+      thebookid:options.bookid,
+      getuserlist: app.globalData.users,
+      getbookslist: app.globalData.books,
+    },function() {
+      let cmp = 0;
+      for (let a of this.data.getbookslist )
+      {
+        if(a.id == this.data.thebookid)
+        {
+          cmp = a.money
+        }
+      }
+      this.setData({
+        thebookmoneys: cmp
+      })
     })
   },
 

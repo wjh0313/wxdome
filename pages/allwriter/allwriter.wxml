@@ -1,0 +1,68 @@
+<!--pages/allwriter/allwriter.wxml-->
+<view class="top-view">
+  <text class="top-view-text">作者</text>
+  <image class="thelistimg" src="../../images/list.png"></image>
+</view>
+<view class="theallwrotertop">
+  <view class="theouer">
+    <image class="thedemimg" src="../../images/dem.png"></image>
+    <image class="thelimg" src="{{ getwriterlist[1].touxiang }}"></image>
+    <text class="thedemt1">{{ getwriterlist[1].name }}</text>
+    <text class="thesamet">{{ getwriterlist[1].fens }}粉丝</text>
+  </view>
+  <view class="theinout">
+    <image class="thedymimg" src="../../images/dym.png"></image>
+    <image class="thebimg" src="{{ getwriterlist[0].touxiang }}"></image>
+    <text class="thedemt2">{{ getwriterlist[0].name }}</text>
+    <text class="thesamet">{{ getwriterlist[0].fens }}粉丝</text>
+  </view>
+  <view class="theouer">
+    <image class="thedemimg" src="../../images/dsm.png"></image>
+    <image class="thelimg" src="{{ getwriterlist[2].touxiang }}"></image>
+    <text class="thedemt3">{{ getwriterlist[2].name }}</text>
+    <text class="thesamet">{{ getwriterlist[2].fens }}粉丝</text>
+  </view>
+</view>
+<view class="aline"></view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">热门作者</text>
+  <navigator url="../allwriter/allwriter" class="view-fenlei-text2">查看全部 ></navigator>
+</view>
+<view class="theswipt1">
+  <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
+    <navigator url="../indexwriter/indexwriter?id={{ item.id }}" class="theswipts-view" wx:for="{{ getwriterlist }}" wx:key="index">
+      <image class="swipts-view-images" src='{{ item.touxiang }}'></image>
+      <view>{{ item.name }}</view>
+      <view class="theaddlist">已关注</view>
+      <view class="nulls"></view>
+    </navigator>
+  </scroll-view>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">新晋作者</text>
+  <navigator url="../allwriter/allwriter" class="view-fenlei-text2">查看全部 ></navigator>
+</view>
+<view class="theswipt1">
+  <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
+    <navigator url="../indexwriter/indexwriter?id={{ item.id }}" class="theswipts-view" wx:for="{{ getwriterlist }}" wx:key="index">
+      <image class="swipts-view-images" src='{{ item.touxiang }}'></image>
+      <view>{{ item.name }}</view>
+      <view class="theaddlists">+关注</view>
+      <view class="nulls"></view>
+    </navigator>
+  </scroll-view>
+</view>
+<view class="view-fenlei">
+  <text class="view-fenlei-text1">其他作者</text>
+  <navigator url="../allwriter/allwriter" class="view-fenlei-text2">查看全部 ></navigator>
+</view>
+<view class="theswipt1">
+  <scroll-view class="thescroll" scroll-x="true" style="width: 100%">
+    <navigator url="../indexwriter/indexwriter?id={{ item.id }}" class="theswipts-view" wx:for="{{ getwriterlist }}" wx:key="index">
+      <image class="swipts-view-images" src='{{ item.touxiang }}'></image>
+      <view>{{ item.name }}</view>
+      <view class="theaddlist">已关注</view>
+      <view class="nulls"></view>
+    </navigator>
+  </scroll-view>
+</view>

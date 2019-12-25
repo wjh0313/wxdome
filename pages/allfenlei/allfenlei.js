@@ -1,4 +1,4 @@
-// pages/myself/myself.js
+// pages/allfenlei/allfenlei.js
 const app = getApp()
 Page({
 
@@ -6,20 +6,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    getuserlist: [],
+    thefenleilist: [],
+    theactive:0,
+    thebookslist:[],
   },
-  navtoset:function() {
-    wx.navigateTo({
-      url: '../seting/seting',
-    })
+  changeactive:function(e) {
+    this.setData({
+      theactive: e.currentTarget.dataset.num
+    });
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.setData({
-      getuserlist: app.globalData.users
-    })
+      thefenleilist: app.globalData.fenlei,
+      thebookslist: app.globalData.books,
+    });
   },
 
   /**

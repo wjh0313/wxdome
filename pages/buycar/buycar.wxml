@@ -1,0 +1,24 @@
+<!--pages/buycar/buycar.wxml-->
+<view class="thebuycartop">购物车</view>
+<view class="thebookscontent">
+  <view class="thebooksloop">
+    <image class="thebooksimage" src='{{ getbookslist[thebookid-1].touxiang }}'></image>
+    <view class="thebooks-content">
+      <text class="thebooks-content-text1">{{ getbookslist[thebookid-1].bookname }}</text>
+      <text class="thebooks-content-text2">作者：{{ getbookslist[thebookid-1].writername }}</text>
+      <text class="thebooks-content-text3">￥{{ getbookslist[thebookid-1].money }}</text>
+    </view>
+    <image class="thebooksimage1" src="../../images/more.png"></image>
+  </view>
+</view>
+<view class="thelastfix">
+  <view class="thelastfixtop">
+    <view>
+      <text class="lastt1">总计(元)：{{ thebookmoneys }}.00</text>
+    </view>
+    <view class="lastt1">余额(元)：{{ getuserlist[0].moneys }}.00</view>
+  </view>
+  <view class="thelastfixbottom">
+    购买
+  </view>
+</view>

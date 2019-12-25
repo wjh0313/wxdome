@@ -1,25 +1,35 @@
-// pages/myself/myself.js
-const app = getApp()
+// pages/thecz/thecz.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    getuserlist: [],
+    myshow:false,
+    theinputmoney: 0
   },
-  navtoset:function() {
-    wx.navigateTo({
-      url: '../seting/seting',
+  changeshow:function() {
+    this.setData({
+      myshow:true,
+
+    })
+  },
+  changesback:function() {
+    this.setData({
+      myshow: false,
+
+    })
+  },
+  themoney:function(e) {
+    this.setData({
+      theinputmoney: e.detail.value
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      getuserlist: app.globalData.users
-    })
+
   },
 
   /**

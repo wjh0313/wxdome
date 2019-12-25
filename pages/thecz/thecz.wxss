@@ -1,0 +1,137 @@
+/* pages/thecz/thecz.wxss */
+.theyuertop
+{
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  color: #fff;
+}
+.theyuercontent
+{
+  width: 660rpx;
+  height: 330rpx;
+  background-color: #2b323b;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.thet1
+{
+  font-size: 42rpx;
+  color:#75808d;
+  margin-left: 50rpx;
+  margin-top: 60rpx;
+}
+.thet2
+{
+  font-size: 100rpx;
+  width: 550rpx;
+  color:#fff;
+  margin-left: 50rpx;
+  margin-top: 15rpx;
+  border-bottom: 1px solid #434e5c;
+  display: flex;
+}
+.thet2s
+{
+  font-size: 100rpx;
+  width: 550rpx;
+  color:#fff;
+  margin-left: 50rpx;
+  margin-top: 15rpx;
+  border-bottom: 1px solid #434e5c;
+  display: flex;
+  margin-bottom: 80rpx;
+}
+#theinout{
+  height: 100%;
+}
+.theczbar
+{
+  height: 140rpx;
+  width: 100%;
+  background-color: #2e363f;
+  line-height: 140rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx;
+  position: fixed;
+  bottom: 0;
+}
+.theupmoney
+{
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.theupmoney-content
+{
+  height: 800rpx;
+  width: 100%;
+  background-color: #434e5c;
+  position: fixed;
+  bottom: 0;
+}
+.thecloseimg
+{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin-right: 40rpx;
+  margin-top: 46rpx;
+}
+.thecontents
+{
+  margin-left: 45rpx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+.theline
+{
+  width: 700rpx;
+  height: 1px;
+  background-color: #333c47;
+  margin: 45rpx 0;
+}
+.thehcon
+{
+  width: 660rpx;
+  display: flex;
+  color: #dcdeea;
+  justify-content: space-between;
+}
+.therighticon
+{
+  width: 18rpx;
+  height: 27rpx;
+}
+.thelasttab
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.theimgzw
+{
+  width: 77rpx;
+  height: 77rpx;
+}
+.thelast-t1
+{
+  color: #636c77;
+  margin-left: 10rpx;
+}
+.thelast-t2
+{
+  color: #fb6894;
+  margin-left: 10rpx;
+}
